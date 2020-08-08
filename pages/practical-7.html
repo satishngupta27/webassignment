@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+margin: 0px;
+padding: 0px;
+        }
+        #container{
+            border: solid black;
+            padding: 15px;
+            margin: 0px auto;
+        }
+        #header{
+        background-color: lightgrey;
+        height: 70px;
+        margin: 15px;        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        color: white;
+
+
+           
+
+        }
+        #banner{
+            display: flex;
+            height: 500px;
+            color:white;
+            background-color: grey;
+            justify-content: center;
+            align-items: center;
+            margin: 15px;
+
+        }
+        h2{
+            text-align: center;
+        }
+       
+        #avtar{
+            display: flex;
+            height: 20rem;
+            width: 20rem;
+            border: 0px;
+            border-radius: 50%;
+            background-color: orange;
+            float: left;
+            margin: 15px;
+
+        }
+        #section1{
+            height: 300px;
+            align-items: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            
+            
+        }
+        #section2{
+            margin: 15px;
+            
+        }
+        #section2::after {
+        content: '';
+        display: block;
+        clear: both;
+      }
+
+
+        #main{
+            width: 50%;
+        height: 400px;
+        /* border: solid green; */
+        float: left;
+        background-color: goldenrod;
+       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        color: white;
+       
+        }
+
+        #rightcontent{
+           width: 50%;
+        /* height: 515px; */
+        /* border: solid blue; */
+        float: right;
+        
+        
+        
+            
+
+        }
+        #article{
+            width: 100%;
+        height: 123px;
+        background-color: blueviolet;
+        margin-bottom: 15px;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        color: white;
+        margin-left: 15px;
+        margin-right: 15px;
+        }
+        #section3{
+            height: 400px;
+            align-items: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #footer{
+            background-color: lightgrey;
+        height: 70px;
+        margin: 15px;        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        color: white;
+        }
+        #box{
+            width: 200px;
+            height: 300px;
+            float: left;
+            background-color: orangered;
+            margin: 15px;
+            
+
+
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">Header</div>
+        <div id="banner">Banner</div>
+        <H2>Section-1</H2>
+        <div id="section1">            
+            <div id="avtar"></div>
+            <div id="avtar"></div>
+            <div id="avtar"></div>
+            <div id="avtar"></div>            
+        </div>
+        <H2>Section-2</H2>
+        <div id="section2">           
+            <div id="main">main Content</div>
+            <div id="rightcontent">
+                <div id="article">article-1</div>
+                <div id="article">article-2</div>
+                <div id="article">article-3</div>
+            </div>
+        </div>
+        <H2>Section-3</H2>
+        <div id="section3">            
+            <div id="box"></div>
+            <div id="box"></div>
+            <div id="box"></div>
+            <div id="box"></div>
+        </div>
+        <h2>Section-4</h2>
+        <div id="footer">footer</div>
+    </div>
+</body>
+</html>
