@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Practical-8</title>
     <style>
         * {
             margin: 0px;
             padding: 0px;
+        }
+        html{
+            scroll-behavior: smooth;
         }
 
         ul {
@@ -39,28 +42,32 @@
 
         #container {
             border: solid black;
-            padding: 15px;
+            
             margin: 0px auto;
         }
 
         #header {
             background-color: lightgrey;
-            height: 70px;
-            margin: 15px;
+            width: 100%;
+            height: 70px;            
             display: flex;
             justify-content: center;
             align-items: center;
             font-size: 40px;
             color: white;
+            position: fixed;
+            top: 0px;
         }
 
         #banner {
             display: flex;
-            height: 500px;
+            height: 700px;
             color: white;
             background-color: grey;
             margin: 15px;
             background-image: url("../img/emile-perron-xrVDYZRGdw4-unsplash.jpg");
+            margin-top: 80px;
+            margin-bottom: 50px;
         }
 
         h2 {
@@ -92,20 +99,22 @@
         }
 
 
-        #section1 {
+        #Team-sec {
             height: 300px;
             align-items: center;
             display: flex;
             align-items: center;
             justify-content: center;
+            margin-top: 30px;
+            margin-bottom: 80px;
         }
 
-        #section2 {
+        #About-Project-sec {
             margin: 15px;
 
         }
 
-        #section2::after {
+        #About-Project-sec::after {
             content: '';
             display: block;
             clear: both;
@@ -125,8 +134,9 @@
         }
 
         #rightcontent {
-            width: 50%;
+            width: 48%;
             float: right;
+            margin-right: 15px;
         }
 
         #main h4 {
@@ -184,7 +194,7 @@
             background-image: url("../img/p3.jpg");
         }
 
-        #section3 {
+        #Technology{
             height: 400px;
             align-items: center;
             display: flex;
@@ -261,24 +271,24 @@
         <div id="header">
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Team</a></li>
-                <li><a href="#">Technologies</a></li>
-                <li><a href="#">Contacts</a></li>
+                <li><a href="#About-Project-sec">About</a></li>
+                <li><a href="#Team-sec">Team</a></li>
+                <li><a href="#Technology">Technologies</a></li>
+                <li><a href="#footer">Contacts</a></li>
             </ul>
         </div>
         <div id="banner">
             <h1 style="color: black;padding: 15px;">Practicle 8</h1>
         </div>
-        <H2>Section-1</H2>
-        <div id="section1">
+        <H2>Team Members</H2>
+        <div id="Team-sec">
             <div id="avtar"><img src="../img/avtar/1.png" /></div>
             <div id="avtar"><img src="../img/avtar/2.png" /></div>
             <div id="avtar"><img src="../img/avtar/3.png" /></div>
             <div id="avtar"><img src="../img/avtar/9.png" /></div>
         </div>
-        <H2>Section-2</H2>
-        <div id="section2">
+        <H2>About Projects</H2>
+        <div id="About-Project-sec">
             <div id="main">
                 <h4>About Project<h4>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt magni delectus minus
@@ -296,8 +306,8 @@
                 </div>
             </div>
         </div>
-        <H2>Section-3</H2>
-        <div class="Section3">
+        <H2>Technologies</H2>
+        <div class="Technology">
             <div class="card">
                 <img src="../img/introtohtml.png" style="width:100%">
                 <div>
