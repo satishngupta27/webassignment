@@ -1,73 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practical 11</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    
-    <style>
 
-        table{
-           
-            border: 1px;
-            margin: auto;
-            width: 90%;
-            text-align: center;
-            border-radius: 10px;
-            
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
         table,
-        th,tr,td
-        {
+        th,
+        tr,
+        td {
             padding: 10px;
+            border-bottom: 1px solid grey;
         }
 
-        .practical-name{
+        thead tr th {
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+        }
+
+        tbody tr:last-child td {
+            border-bottom: 3px solid #34495E;
+        }
+
+        tbody tr:last-child td:last-child {
+
+            border-bottom-right-radius: 10px;
+        }
+
+        tbody tr:last-child td:first-child {
+
+            border-bottom-left-radius: 10px;
+        }
+
+        table {
+
+            border-collapse: separate;
+            border-spacing: 0px;
+            margin: auto;
+            width: 90%;
+            text-align: center;
+            border: none;
+
+
+
+
+        }
+
+        tbody tr:first-child th:first-child {
+            border-left: 3px solid #34495E;
+        }
+
+        tbody tr:first-child th:last-child {
+            border-right: 3px solid #34495E;
+        }
+
+        tr td:first-child {
+            border-left: 3px solid #34495E;
+        }
+
+        tr td:last-child {
+            border-right: 3px solid #34495E;
+        }
+
+
+        .practical-name {
             text-align: start;
         }
+
         thead th {
             background-color: #34495E;
-            color:white;
+            color: white;
+
         }
 
-        a:link{
+        a {
             text-decoration: none;
+            color: grey;
+
         }
-        tr:hover{
+
+        a:hover {
+            color: blue;
+        }
+
+        tr:hover {
             background-color: rgb(196, 192, 192);
         }
-        
 
+        tbody th {
+            border-bottom: 5px solid grey;
+        }
+
+        i:hover {
+            color: #34495E;
+            cursor: progress;
+            
+        }
+
+        tbody tr td:nth-child(4) {
+            color: green;
+        }
     </style>
 </head>
+
 <body>
 
     <table>
+
         <thead>
-            
-              <th colspan="5">FULLSTACK LIVE PRACTICAL BOOK</th>
-            
+            <tr>
+                <th colspan="5">FULLSTACK LIVE PRACTICAL BOOK</th>
+            </tr>
         </thead>
 
         <tbody>
             <tr>
-                
+
                 <th>#</th>
                 <th>Practical Name</th>
                 <th>Link</th>
                 <th>Status</th>
                 <th>Tools</th>
-            </tr> 
-                        
+            </tr>
+
             <tr>
-              <td>1</td>
-              <td class="practical-name">Create a Web page includeing HTML basic Skeleton using Offline HTML Editor And
-                Online Sandbox Environment</td>
-              <td><a href="./practical-1.html">Practical-1</a></td>
-              <td>Checked</td>
-              <td><i class="material-icons" >edit</i><i class="material-icons">delete</i></td>
+                <td>1</td>
+                <td class="practical-name">Create a Web page includeing HTML basic Skeleton using Offline HTML Editor
+                    And
+                    Online Sandbox Environment</td>
+                <td><a href="./practical-1.html">Practical-1</a></td>
+                <td>Checked</td>
+                <td><i class="material-icons" title="edit">edit</i><i class="material-icons" title="delete">delete</i></td>
             </tr>
 
             <tr>
@@ -75,25 +148,27 @@
                 <td class="practical-name">Live your First Web-Page on Github </td>
                 <td><a href="./practical-2.html">Practical-2</a></td>
                 <td>Checked</td>
-                <td><i class="material-icons" >edit</i><i class="material-icons">delete</i></td>
+                <td><i class="material-icons" title="edit">edit</i><i class="material-icons" title="delete">delete</i></td>
             </tr>
 
             <tr>
                 <td>3</td>
-                <td class="practical-name">Create a web page showing a basic html structure using character entities and span
+                <td class="practical-name">Create a web page showing a basic html structure using character entities and
+                    span
                     Tag</td>
                 <td><a href="./practical-3.html">Practical-3</a></td>
                 <td>Checked</td>
-                <td><i class="material-icons" >edit</i><i class="material-icons">delete</i></td>
+                <td><i class="material-icons" title="edit">edit</i><i class="material-icons" title="delete">delete</i></td>
             </tr>
 
             <tr>
                 <td>4</td>
-                <td class="practical-name">Create a website having list of all practical and their individual practical Pages
+                <td class="practical-name">Create a website having list of all practical and their individual practical
+                    Pages
                     links </td>
                 <td><a href="./practical-4.html">Practical-4</a></td>
                 <td>Checked</td>
-                <td><i class="material-icons" >edit</i><i class="material-icons">delete</i></td>
+                <td><i class="material-icons" title="edit">edit</i><i class="material-icons" title="delete">delete</i></td>
             </tr>
 
             <tr>
@@ -101,15 +176,15 @@
                 <td class="practical-name">Create a web Page and use image map for linking pages.</td>
                 <td><a href="./practical-5.html">Practical-5</a></td>
                 <td>Checked</td>
-                <td><i class="material-icons" >edit</i><i class="material-icons">delete</i></td>
+                <td><i class="material-icons" title="edit">edit</i><i class="material-icons" title="delete">delete</i></td>
             </tr>
-            
+
             <tr>
                 <td>6</td>
                 <td class="practical-name">Create a Card using css layout properties.</td>
                 <td><a href="./practical-6.html">Practical-6</a></td>
                 <td>Checked</td>
-                <td><i class="material-icons" >edit</i><i class="material-icons">delete</i></td>
+                <td><i class="material-icons" title="edit">edit</i><i class="material-icons" title="delete">delete</i></td>
             </tr>
 
             <tr>
@@ -117,7 +192,7 @@
                 <td class="practical-name">Create a Web Page Layout using div tags.</td>
                 <td><a href="./practical-7.html">Practical-7</a></td>
                 <td>Checked</td>
-                <td><i class="material-icons" >edit</i><i class="material-icons">delete</i></td>
+                <td><i class="material-icons" title="edit">edit</i><i class="material-icons" title="delete">delete</i></td>
             </tr>
 
             <tr>
@@ -125,15 +200,15 @@
                 <td class="practical-name"> Create a Web Page having Fixed Navigation Bar with the given content. </td>
                 <td><a href="./practical-8.html">Practical-8</a></td>
                 <td>Checked</td>
-                <td><i class="material-icons" >edit</i><i class="material-icons">delete</i></td>
+                <td><i class="material-icons" title="edit">edit</i><i class="material-icons" title="delete">delete</i></td>
             </tr>
 
             <tr>
                 <td>9</td>
-                <td class="practical-name">Create a Responsive Web Layout with Responsive Navigation Bar.  </td>
+                <td class="practical-name">Create a Responsive Web Layout with Responsive Navigation Bar. </td>
                 <td><a href="./practical-9.html">Practical-9</a></td>
                 <td>Checked</td>
-                <td><i class="material-icons" >edit</i><i class="material-icons">delete</i></td>
+                <td><i class="material-icons" title="edit">edit</i><i class="material-icons" title="delete">delete</i></td>
             </tr>
 
             <tr>
@@ -141,20 +216,22 @@
                 <td class="practical-name">Create a Responsive Side-Bar Navigation Menu. </td>
                 <td><a href="./practical-10.html">Practical-10</a></td>
                 <td>Checked</td>
-                <td><i class="material-icons" >edit</i><i class="material-icons">delete</i></td>
+                <td><i class="material-icons" title="edit">edit</i><i class="material-icons" title="delete">delete</i></td>
             </tr>
 
             <tr>
                 <td>11</td>
-                <td class="practical-name">Create a website having list of all practical and their individual practical Pages
+                <td class="practical-name">Create a website having list of all practical and their individual practical
+                    Pages
                     links </td>
                 <td><a href="./practical-11.html">Practical-11</a></td>
                 <td>Checked</td>
-                <td><i class="material-icons" >edit</i><i class="material-icons">delete</i></td>
+                <td><i class="material-icons" title="edit">edit</i><i class="material-icons" title="delete">delete</i></td>
             </tr>
 
-          </tbody>
+        </tbody>
     </table>
-    
+
 </body>
+
 </html>
