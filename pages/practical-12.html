@@ -1,98 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>practical-12</title>
-    
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style>
-        *{
+        * {
             padding: 0px;
             margin: 0px;
             box-sizing: border-box;
             font-family: Arial, Helvetica, sans-serif;
         }
-        body{
+
+        body {
             min-width: 100%;
             background-color: lightgrey;
         }
 
-        .wrapper{
+        .wrapper {
             width: 600px;
             background-color: #fff;
             padding: 10px;
             margin: 20px auto;
         }
-        .custom-table{
+
+        .custom-table {
             width: 100%;
             margin: 0 auto;
             border-collapse: collapse;
 
         }
-        .basic{
+
+        .basic {
             background-color: rgb(167, 233, 123);
         }
-        .plus{
+
+        .plus {
             background-color: rgb(123, 143, 233);
         }
-        .delux{
+
+        .delux {
             background-color: rgb(233, 178, 181);
         }
-        .pro{
+
+        .pro {
             background-color: rgb(158, 214, 209);
         }
-        .custom-table td, .custom-table th{
+
+        .custom-table td,
+        .custom-table th {
             width: 150px;
             padding: 8px 5px;
             text-align: center;
             border-right: 2px solid white;
             border-left: 2px solid white;
         }
-        .custom-table th{
+
+        .custom-table th {
             height: 70px;
             color: 64548f;
             font-size: 28px;
         }
-        i{
+
+        i {
             font-size: 28px;
             color: 64548f;
             margin-right: 10px;
         }
-        tbody tr:nth-child(odd) , tfoot tr:nth-child(odd){
+
+        tbody tr:nth-child(odd),
+        tfoot tr:nth-child(odd) {
             background-color: #edf3e2;
         }
-        tfoot tr{
+
+        tfoot tr {
             line-height: 40px;
         }
-        a{
+
+        a {
             text-decoration: none;
             background-color: #64548f;
             padding: 10px 25px;
-            color :white;
+            color: white;
             border-radius: 10px;
             font-size: 18px;
             vertical-align: middle;
         }
-        a:hover{
+
+        a:hover {
             background-color: red;
         }
-        h2{
+
+        h2 {
             text-align: center;
             text-transform: uppercase;
             margin-bottom: 10px;
         }
-        tbody tr:first-child td{
+
+        tbody tr:first-child td {
             font-size: 20px;
-            color :green;
+            color: green;
         }
-
-
-
     </style>
 
 </head>
+
 <body>
     <div class="wrapper">
         <h2>Select Your Plan</h2>
@@ -104,16 +120,16 @@
             <thead>
                 <tr>
                     <th>
-                        <i class ="fa fa-building"></i> Basic
+                        <i class="fa fa-building"></i> Basic
                     </th>
                     <th>
-                        <i class ="fa fa-superpowers"></i> Plus
+                        <i class="fa fa-superpowers"></i> Plus
                     </th>
                     <th>
-                        <i class ="fa fa-telegram"></i> Delux
+                        <i class="fa fa-telegram"></i> Delux
                     </th>
                     <th>
-                        <i class ="fa fa-tachometer"></i> Pro
+                        <i class="fa fa-tachometer"></i> Pro
                     </th>
                 </tr>
             </thead>
@@ -159,30 +175,30 @@
                     <td><img src="../img/icon/icon-check.png" alt="check" srcset=""></td>
                     <td><img src="../img/icon/icon-check.png" alt="check" srcset=""></td>
                     <td><img src="../img/icon/icon-check.png" alt="check" srcset=""></td>
-                    
+
                 </tr>
                 <tr>
                     <td><img src="../img/icon/icon-x.png" alt="uncheck" srcset=""></td>
                     <td><img src="../img/icon/icon-check.png" alt="check" srcset=""></td>
                     <td><img src="../img/icon/icon-check.png" alt="check" srcset=""></td>
                     <td><img src="../img/icon/icon-check.png" alt="check" srcset=""></td>
-                    
+
                 </tr>
                 <tr>
                     <td><img src="../img/icon/icon-x.png" alt="uncheck" srcset=""></td>
                     <td><img src="../img/icon/icon-check.png" alt="check" srcset=""></td>
                     <td><img src="../img/icon/icon-check.png" alt="check" srcset=""></td>
                     <td><img src="../img/icon/icon-check.png" alt="check" srcset=""></td>
-                    
+
                 </tr>
                 <tr>
                     <td><img src="../img/icon/icon-x.png" alt="uncheck" srcset=""></td>
                     <td><img src="../img/icon/icon-x.png" alt="uncheck" srcset=""></td>
                     <td><img src="../img/icon/icon-check.png" alt="check" srcset=""></td>
                     <td><img src="../img/icon/icon-check.png" alt="check" srcset=""></td>
-                    
+
                 </tr>
-                
+
             </tbody>
             <tfoot>
                 <tr>
@@ -194,6 +210,7 @@
             </tfoot>
         </table>
     </div>
-    
+
 </body>
+
 </html>
