@@ -22,7 +22,7 @@ body{
 .container form{
     width: 280px;
     position: absolute;
-    margin-top: 60px;
+    margin-top: 50px;
     left: 40px;
     top: 80px;
     transition: .5s;
